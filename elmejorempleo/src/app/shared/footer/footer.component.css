@@ -1,0 +1,7 @@
+.footer {
+    background-color: rgb(13, 150, 150);
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    box-shadow: none;
+}
