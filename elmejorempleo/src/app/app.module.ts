@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ListEmploymentComponent } from './component/list-employment/list-employment.component';
+import {DataViewModule} from 'primeng/dataview';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ListEmploymentComponent } from './component/list-employment/list-employ
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DataViewModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,17 @@
 .footer {
     background-color: rgb(13, 150, 150);
-    position: absolute;
     bottom: 0%;
     width: 100%;
-    box-shadow: none;
+    height: 100px;
+    margin-top: 50px;
+  /*  max-height: 100%;    */
+    position: fixed;
+    color: rgb(231, 237, 240);
+}
+
+.footerTex {
+    padding-right: 0px;
+    font-family:Century Gothic,arial,helvética; 
+    font-weight: bold;
+    margin-bottom: 0px;
 }

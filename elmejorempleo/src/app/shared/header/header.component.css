@@ -1,8 +1,9 @@
 .header {
     border-style: ridge;
-    border-color: rgb(13, 150, 150);
+    border-color: rgb(6, 29, 29);
     border-bottom: 50%;
     height: 90px;
+    background-color: rgb(13, 150, 150);
 }
 
 .titulo p {
@@ -10,4 +11,5 @@
     font-family: verdana;
     font-size: 50px;
     margin-bottom: 0%;
+    color: aliceblue;
 }

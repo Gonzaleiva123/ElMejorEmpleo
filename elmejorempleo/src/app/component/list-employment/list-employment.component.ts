@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EmploymentListModel } from 'src/app/model/employment-list-model';
+import { EmploymentService } from 'src/app/services/employment.service';
 
 @Component({
   selector: 'app-list-employment',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListEmploymentComponent implements OnInit {
 
-  constructor() { }
+  //employsList!: EmploymentListModel[];
+  public employsList: EmploymentListModel[] = [];
+  constructor(private employtmentsService: EmploymentService) { }
+  
 
   ngOnInit(): void {
+    this.employtmentsService.getProducts().then(data => this.employsList = data);
+    //this.employsList = this.employtmentsService.getProducts();
+    console.log(this.employtmentsService);
+
   }
 
 }
