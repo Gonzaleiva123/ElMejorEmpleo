@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card example-1 scrollbar-ripe-malinka" >
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2"  >
+            <ul class="list-group list-group-flush">
+                <li *ngFor="let item of employsList" class="list-group-item" >                   
+                    <div class="card mb-3" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-4" style="max-width: 20%; max-height: 10%; 
+                                                          border-style: ridge; 
+                                                         border-color: rgb(167, 224, 224);" >
+                                <img src="{{item.imagen}}" class="card-img-top" alt="...">
+                            </div>   
+                            <div class="col-md-8">      
+                                <div class="card-body">
+                                    <h5 class="card-title" style = "font-family:Century Gothic,arial,helvética; font-weight: bold;">{{item.empleo}} </h5>
+                                    <p class="card-text" style = "font-family:Century Gothic">Requisitos: </p>
+                                    <p class="card-text" style="padding-left: 15px;">{{item.requisitos}} </p>
+                                    <p class="card-text" style = "font-family:Century Gothic">Prestaciones: </p>
+                                    <p class="card-text" style="padding-left: 15px;">{{item.prestaciones}} </p>
+                                    <p class="card-text" style = "font-family:Century Gothic">Descripcion: </p>
+                                    <p class="card-text" style="padding-left: 15px;"> {{item.descripcion}} - Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a>  -->
+                                </div>
+                            </div>  
+                            <div class="card-footer text-muted">
+                               <p> Si estas interesado en el empleo, por favor mandar curriculum al whatsapp - 333 333 333 33 </p>
+                            </div>  
+                        </div>
+                    </div>  
+                </li>
+            </ul>
+        </div>
+    </div>    
+</div>
+
+
