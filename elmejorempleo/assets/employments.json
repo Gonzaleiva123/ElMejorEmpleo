@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "empleo": "Jabil",
+            "descripcion": "jabilDescripcion",
+            "requisitos": "-preparatoria terminada -fotografia",
+            "prestaciones": "imss",
+            "imagen": "../../../assets/image/trabajo2.JPG" 
+        },
+        {
+            "id": 2,
+            "empleo": "Flex",
+            "descripcion": "flexlDescripcion",
+            "requisitos": "",
+            "prestaciones": "",
+            "imagen": "../../../assets/image/trabajo3.JPG"
+        },
+        {
+            "id": 3,
+            "empleo": "Tiendita",
+            "descripcion": "TienditaDescripcion",
+            "requisitos": "",
+            "prestaciones": "",
+            "imagen": "../../../assets/image/trabajo4.JPG" 
+        },
+        {
+            "id": 4,
+            "empleo": "Amazone",
+            "descripcion": "amazoneDescripcion",
+            "requisitos": "",
+            "prestaciones": "",
+            "imagen": "../../../assets/image/trabajo4.JPG" 
+        },
+        {
+            "id": 5,
+            "empleo": "Aurrera",
+            "descripcion": "AurreraDescripcion",
+            "requisitos": "",
+            "prestaciones": "",
+            "imagen": "../../../assets/image/trabajo2.JPG" 
+        },
+        {
+            "id": 6,
+            "empleo": "Apple",
+            "descripcion": "AppleDescripcion",
+            "requisitos": "",
+            "prestaciones": "",
+            "imagen": "../../../assets/image/trabajo2.JPG" 
+        },
+        {
+            "id": 7,
+            "empleo": "Omron",
+            "descripcion": "OmronDescripcion",
+            "requisitos": "",
+            "prestaciones": "",
+            "imagen": "../../../assets/image/trabajo2.JPG" 
+        },
+        {
+            "id": 8,
+            "empleo": "HP",
+            "descripcion": "HPDescripcion",
+            "requisitos": "",
+            "prestaciones": "",
+            "imagen": "../../../assets/image/trabajo2.JPG" 
+        },
+        {
+            "id": 9,
+            "empleo": "Adata",
+            "descripcion": "AdataDescripcion",
+            "requisitos": "",
+            "prestaciones": "",
+            "imagen": "../../../assets/image/trabajo2.JPG"  
+        }
+    ]
+}    
