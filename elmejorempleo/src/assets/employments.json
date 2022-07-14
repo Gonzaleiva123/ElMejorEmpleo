@@ -6,6 +6,7 @@
             "descripcion": "jabilDescripcion",
             "requisitos": "-preparatoria terminada -fotografia",
             "prestaciones": "imss",
+            "lugar": "",
             "imagen": "../../../assets/image/trabajo2.JPG" 
         },
         {
@@ -14,6 +15,7 @@
             "descripcion": "flexlDescripcion",
             "requisitos": "",
             "prestaciones": "",
+            "lugar": "",
             "imagen": "../../../assets/image/trabajo3.JPG"
         },
         {
@@ -22,7 +24,8 @@
             "descripcion": "TienditaDescripcion",
             "requisitos": "",
             "prestaciones": "",
-            "imagen": "../../../assets/image/trabajo4.JPG" 
+            "lugar": "",
+            "imagen": "../../../assets/image/trabajo5.JPG" 
         },
         {
             "id": 4,
@@ -30,7 +33,8 @@
             "descripcion": "amazoneDescripcion",
             "requisitos": "",
             "prestaciones": "",
-            "imagen": "../../../assets/image/trabajo4.JPG" 
+            "lugar": "",
+            "imagen": "../../../assets/image/trabajo6.JPG" 
         },
         {
             "id": 5,
@@ -38,7 +42,8 @@
             "descripcion": "AurreraDescripcion",
             "requisitos": "",
             "prestaciones": "",
-            "imagen": "../../../assets/image/trabajo2.JPG" 
+            "lugar": "",
+            "imagen": "../../../assets/image/trabajo7.JPG" 
         },
         {
             "id": 6,
@@ -46,7 +51,8 @@
             "descripcion": "AppleDescripcion",
             "requisitos": "",
             "prestaciones": "",
-            "imagen": "../../../assets/image/trabajo2.JPG" 
+            "lugar": "",
+            "imagen": "../../../assets/image/trabajo8.JPG" 
         },
         {
             "id": 7,
@@ -54,7 +60,8 @@
             "descripcion": "OmronDescripcion",
             "requisitos": "",
             "prestaciones": "",
-            "imagen": "../../../assets/image/trabajo2.JPG" 
+            "lugar": "",
+            "imagen": "../../../assets/image/trabajo9.JPG" 
         },
         {
             "id": 8,
@@ -62,7 +69,8 @@
             "descripcion": "HPDescripcion",
             "requisitos": "",
             "prestaciones": "",
-            "imagen": "../../../assets/image/trabajo2.JPG" 
+            "lugar": "",
+            "imagen": "../../../assets/image/trabajo10.JPG" 
         },
         {
             "id": 9,
@@ -70,7 +78,8 @@
             "descripcion": "AdataDescripcion",
             "requisitos": "",
             "prestaciones": "",
-            "imagen": "../../../assets/image/trabajo2.JPG"  
+            "lugar": "",
+            "imagen": "../../../assets/image/trabajo11.JPG"  
         }
     ]
 }    

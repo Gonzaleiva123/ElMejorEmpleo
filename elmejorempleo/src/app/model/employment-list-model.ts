@@ -7,6 +7,7 @@ export interface EmploymentListModel {
     imagen?: string;
     requisitos?: string; 
     prestaciones?: string;
+    lugar?: string;
 
 
 }
