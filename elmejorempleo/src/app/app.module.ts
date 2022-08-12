@@ -8,13 +8,15 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ListEmploymentComponent } from './component/list-employment/list-employment.component';
 import {DataViewModule} from 'primeng/dataview';
 import { HttpClientModule } from '@angular/common/http';
+import { DetailEmploymentComponent } from './component/detail-employment/detail-employment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ListEmploymentComponent
+    ListEmploymentComponent,
+    DetailEmploymentComponent
   ],
   imports: [
     BrowserModule,

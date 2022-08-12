@@ -2,84 +2,21 @@
     "data": [
         {
             "id": 1,
-            "empleo": "Jabil",
-            "descripcion": "jabilDescripcion",
-            "requisitos": "-preparatoria terminada -fotografia",
-            "prestaciones": "imss",
-            "lugar": "",
-            "imagen": "../../../assets/image/trabajo2.JPG" 
+            "empleo": "Cigarrera",
+            "descripcion": "Personal de intendencia",
+            "requisitos": "-Ser mayor de edad -INE ó IFE -Disponibilidad de horario",
+            "prestaciones": "Prestaciones de ley, Turnos de 12 horas trabaja 4 dias y descansa 3 dias, Suedo turno nocturno $1800 semanales libres, turno matutino $1550 semanales libres",
+            "lugar": " Plaza Ciudadela,Zapopan, Jalisco",
+            "imagen": "../../../assets/image/trabajo14.JPG"
         },
         {
             "id": 2,
-            "empleo": "Flex",
-            "descripcion": "flexlDescripcion",
-            "requisitos": "",
-            "prestaciones": "",
-            "lugar": "",
-            "imagen": "../../../assets/image/trabajo3.JPG"
-        },
-        {
-            "id": 3,
-            "empleo": "Tiendita",
-            "descripcion": "TienditaDescripcion",
-            "requisitos": "",
-            "prestaciones": "",
-            "lugar": "",
-            "imagen": "../../../assets/image/trabajo5.JPG" 
-        },
-        {
-            "id": 4,
-            "empleo": "Amazone",
-            "descripcion": "amazoneDescripcion",
-            "requisitos": "",
-            "prestaciones": "",
-            "lugar": "",
-            "imagen": "../../../assets/image/trabajo6.JPG" 
-        },
-        {
-            "id": 5,
-            "empleo": "Aurrera",
-            "descripcion": "AurreraDescripcion",
-            "requisitos": "",
-            "prestaciones": "",
-            "lugar": "",
-            "imagen": "../../../assets/image/trabajo7.JPG" 
-        },
-        {
-            "id": 6,
-            "empleo": "Apple",
-            "descripcion": "AppleDescripcion",
-            "requisitos": "",
-            "prestaciones": "",
-            "lugar": "",
-            "imagen": "../../../assets/image/trabajo8.JPG" 
-        },
-        {
-            "id": 7,
-            "empleo": "Omron",
-            "descripcion": "OmronDescripcion",
-            "requisitos": "",
-            "prestaciones": "",
-            "lugar": "",
-            "imagen": "../../../assets/image/trabajo9.JPG" 
-        },
-        {
-            "id": 8,
-            "empleo": "HP",
-            "descripcion": "HPDescripcion",
-            "requisitos": "",
-            "prestaciones": "",
-            "lugar": "",
-            "imagen": "../../../assets/image/trabajo10.JPG" 
-        },
-        {
-            "id": 9,
-            "empleo": "Adata",
-            "descripcion": "AdataDescripcion",
-            "requisitos": "",
-            "prestaciones": "",
-            "lugar": "",
-            "imagen": "../../../assets/image/trabajo11.JPG"  
-        }
+            "empleo": "Vinateria",
+            "descripcion": "Almacenista",
+            "requisitos": "-Ser mayor de edad ",
+            "prestaciones": "Prestaciones de ley, Sin problemas para cargar, ",
+            "lugar": " Dr. Angel Leaño, Zapopan, Jalisco",
+            "imagen": "../../../assets/image/trabajo4.JPG"
+        }       
     ]
 }    
