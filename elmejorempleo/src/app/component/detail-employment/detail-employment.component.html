@@ -1,4 +1,117 @@
-<p>detail-employment works!</p>
+<form class="row g-3" [formGroup]="FormEmployment"   (ngSubmit)="agregarEditarEmpleo()">
+    <h1>{{titulo}}</h1>
+    <div class="block">
+        <div class="block">
+            <label  class="form-label" for="empleo">Empleo:</label>
+            <input type="text" class="form-control" id="empleo" formControlName="empleo">
+        </div>
+
+        <div class="col-12">
+            <label class="form-label" for="descripcion">Descripcion:</label>
+            <input type="text" class="form-control" id="descripcion" formControlName="descripcion">
+        </div>
+
+        <div class="col-12">
+            <label for="requisitos">Requisitos:</label>
+            <input type="text" class="form-control" id="requisitos" formControlName="requisitos">
+        </div>
+
+        <div class="col-12">
+            <label for="imagen">Imagen:</label>
+             <input type="text" readonly class="form-control" id="imagen"  formControlName="imagen"> 
+<!--             <select class="form-select" aria-label="Default select example" formControlName="imagen">               
+                <option value="trabajo1.JPG">trabajo1 </option> 
+                <option value="trabajo2.JPG">trabajo2 </option> 
+                <option value="trabajo3.JPG">trabajo3 </option> 
+                <option value="trabajo4.JPG">trabajo4 </option> 
+                <option value="trabajo5.JPG">trabajo5 </option> 
+                <option value="trabajo6.JPG">trabajo6 </option> 
+                <option value="trabajo7.JPG">trabajo7 </option> 
+                <option value="trabajo8.JPG">trabajo8 </option> 
+                <option value="trabajo9.JPG">trabajo9 </option> 
+                <option value="trabajo10.JPG">trabajo10 </option>     
+              </select> -->
+        </div>        
+
+        <div class="col-12">
+            <label for="prestaciones">prestaciones:</label>
+            <input type="text" class="form-control" id="prestaciones" formControlName="prestaciones">
+        </div>
+
+        <div class="col-12">
+            <label for="lugar">Lugar:</label>
+            <input type="text" class="form-control" id="lugar" formControlName="lugar">
+        </div>
+        
+        <div>
+            Valido: {{FormEmployment.valid | json}}
+            Valido: {{FormEmployment.value | json}}
+        </div>
+
+        <button type="submit"  [disabled]="FormEmployment.invalid"   class="btn btn-primary">send</button>
+        <button type="button" class="btn btn-danger" [routerLink]="['/']">Cancel</button>
+    </div>  
+
+    <!-- <button>  <img src="../../../assets/image/trabajo1.JPG" class="card-img-top" alt="..." width="100%" height="100%" > </button> -->
+</form>
+<div  style="margin: 20px; border: 2px solid black; ">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="display: inline;">
+        <div class="carousel-inner">
+            <div class="carousel-item active clearfix" >
+            <button (click)="selectImagen('trabajo1.JPG')"> <img src="../../../assets/image/trabajo1.JPG"  class="d-block w-50 imgPro" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix" >
+                <button (click)="selectImagen('trabajo2.JPG')"> <img src="../../../assets/image/trabajo2.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo3.JPG')"> <img src="../../../assets/image/trabajo3.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo4.JPG')"> <img src="../../../assets/image/trabajo4.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo5.JPG')"> <img src="../../../assets/image/trabajo5.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo6.JPG')"> <img src="../../../assets/image/trabajo6.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo7.JPG')"> <img src="../../../assets/image/trabajo7.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo8.JPG')"> <img src="../../../assets/image/trabajo8.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo9.JPG')"> <img src="../../../assets/image/trabajo9.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo10.JPG')"> <img src="../../../assets/image/trabajo10.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo11.JPG')"> <img src="../../../assets/image/trabajo11.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo12.JPG')"> <img src="../../../assets/image/trabajo12.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo13.JPG')"> <img src="../../../assets/image/trabajo13.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+            <div class="carousel-item clearfix " >
+                <button (click)="selectImagen('trabajo14.JPG')"> <img src="../../../assets/image/trabajo14.JPG"  class="d-block w-50" alt="..."> </button>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
 
 
     

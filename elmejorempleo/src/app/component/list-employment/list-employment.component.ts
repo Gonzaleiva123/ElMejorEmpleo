@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { EmploymentListModel } from 'src/app/model/employment-list-model';
+import { Component, OnInit, Output } from '@angular/core';
 import { EmploymentService } from 'src/app/services/employment.service';
+import { __values } from 'tslib';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-list-employment',
@@ -8,17 +9,35 @@ import { EmploymentService } from 'src/app/services/employment.service';
   styleUrls: ['./list-employment.component.css']
 })
 export class ListEmploymentComponent implements OnInit {
+  empleos: any[] = [];
 
-  //employsList!: EmploymentListModel[];
-  public employsList: EmploymentListModel[] = [];
-  constructor(private employtmentsService: EmploymentService) { }
-  
+  constructor(
+      private employtmentsService: EmploymentService, 
+      private toast: ToastrService,
+      ) { 
+      }  
 
   ngOnInit(): void {
-    this.employtmentsService.getProducts().then(data => this.employsList = data);
-    //this.employsList = this.employtmentsService.getProducts();
-    console.log(this.employtmentsService);
+    this.getEmpleos();
+  }
 
+  getEmpleos(){
+    this.employtmentsService.getAllEmpleos().subscribe(data => {
+      this.empleos = [];
+      data.forEach((element: any) => {
+        this.empleos.push({
+          id: element.payload.doc.id,
+          ...element.payload.doc.data()
+        })
+      });
+    })
+  }
+
+  deleteEmpleos(id: string){
+    this.employtmentsService.eliminarEmpleo(id).then(() => {
+      this.toast.error('El Empleo fue eliminado con exito', 'Registro eliminado');     
+    }).catch(error => {
+    } )
   }
 
 }

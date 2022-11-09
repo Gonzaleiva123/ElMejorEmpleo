@@ -1,0 +1,16 @@
+.block {
+    margin: 5px;
+}
+
+.clearfix {
+    padding-left: 40%;
+    padding-right: 40%;
+    width: 100%;
+  }
+
+  .imgPro{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: none ;
+    width: 180px;
+  }
