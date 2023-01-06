@@ -20,6 +20,13 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app'
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { ToastrModule } from 'ngx-toastr';
+import { LoginComponent } from './component/login/login.component';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AuthService } from './services/auth.service';
+import { SignUpComponent } from './component/sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './component/verify-email/verify-email.component';
+
 
 
 @NgModule({
@@ -28,7 +35,11 @@ import { ToastrModule } from 'ngx-toastr';
     HeaderComponent,
     FooterComponent,
     ListEmploymentComponent,
-    DetailEmploymentComponent
+    DetailEmploymentComponent,
+    LoginComponent,
+    SignUpComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent
   ],
   imports: [
     BrowserModule,
@@ -39,14 +50,17 @@ import { ToastrModule } from 'ngx-toastr';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
+    AngularFireAuthModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    
+ 
 
     
   /* provideFirebaseApp(() => initializeApp(environment.firebase)),
    provideFirestore(() => getFirestore()),*/
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

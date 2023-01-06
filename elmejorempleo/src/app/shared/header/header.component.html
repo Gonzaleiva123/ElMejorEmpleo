@@ -1,12 +1,26 @@
-<div class="header row" > 
-    <div class="titulo col-6 ">
-        <p  style = "font-family:Century Gothic,arial,helvética; 
-                        font-weight: bold; ">
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-whatsapp"></i>El Mejor Empleo</p>
-       
-    </div>    
-    <div class="col-6" style="display: inline;">
-        <button type="button" class="btn btn-warning btn-lg" [routerLink]="['/DetailEmployment']"> +Nuevo Empleo </button>      
-    </div>
-</div>
+
+<ul>
+    <li>
+        <div class="titulo  container  ">
+            <p  style = "font-family:Century Gothic,arial,helvética; font-weight: bold; ">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-whatsapp"></i>El Mejor Empleo</p>
+        </div>
+    </li>    
+    <li >
+        <div *ngIf="validation" >
+            <p>User: {{varEmail}}</p>                    
+        </div>
+    </li>
+    <li style="float:right">
+        <div *ngIf="!validation">
+            <a class="nav-link" routerLink="/login">Login </a>
+        </div>
+    </li>
+    <li style="float:right"  *ngIf="validation">
+        <div  class=" clearfix" (click)="authService.SignOut()">        
+                    <a class="nav-link" > <i class="fas fa-sign-out-alt"></i>Log out </a>      
+        </div> 
+        <button type="button" class="btn btn-warning btn-lg " [routerLink]="['/DetailEmployment']"> +Nuevo Empleo </button>   
+    </li>  
+</ul> 

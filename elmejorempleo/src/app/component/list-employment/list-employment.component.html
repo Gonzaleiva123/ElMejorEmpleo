@@ -26,12 +26,12 @@
                                 </div>
                             </div>  
                             <div class="card-footer text-muted">
-                               <p> Si estas interesado en el empleo, por favor mandar curriculum y el nombre del empleo al whatsapp - 33 2323 1647</p>
+                               <p> Si estas interesado en el empleo, por favor mandar curriculum y el nombre del empleo al whatsapp - 33 1344 1529</p>
                             </div>  
                         </div>
                     </div>  
-                    <button type="button" class="btn btn-primary" [routerLink]="['/editDetailEmployment/', item.id]">Edit</button>
-                    <button type="button" class="btn btn-danger" (click)="deleteEmpleos(item.id)" >Delete</button>
+                    <button *ngIf="validationUser" type="button" class="btn btn-primary" [routerLink]="['/editDetailEmployment/', item.id]">Edit</button>
+                    <button *ngIf="validationUser" type="button" class="btn btn-danger" (click)="deleteEmpleos(item.id)" >Delete</button>
                 </li>
             </ul>
         </div>

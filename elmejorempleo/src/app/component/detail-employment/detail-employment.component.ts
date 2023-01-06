@@ -60,7 +60,7 @@ export class DetailEmploymentComponent implements OnInit {
       empleo: this.FormEmployment.value.empleo,
       descripcion: this.FormEmployment.value.descripcion,
       requisitos: this.FormEmployment.value.requisitos,
-      prestaciones: this.FormEmployment.value.lugar,
+      prestaciones: this.FormEmployment.value.prestaciones,
       imagen: this.FormEmployment.value.imagen,
       lugar: this.FormEmployment.value.lugar,
     }

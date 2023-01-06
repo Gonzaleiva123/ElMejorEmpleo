@@ -1,0 +1,27 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+    <div class="authBlock pading">
+      <h3>Esta seccion es solo para administradores</h3>
+      <h3>Login</h3>
+      <div class="formGroup pading">
+        <input type="text" class="formControl" placeholder="UserEmail" #userEmail required>
+      </div>
+      <div class="formGroup pading"  >
+        <input type="password" class="formControl" placeholder="Password" #userPassword required>
+      </div>
+      <!-- Calling SignIn Api from AuthService -->
+      <div class="formGroup">
+        <button class="btn btn-primary" >
+        <input type="button" class="btn btnPrimary" value="Login" (click)="authService.SignIn(userEmail.value, userPassword.value)">
+      </button>
+      </div>
+        <!--esta seccion comentada es para la face 3--> 
+<!--     <div class="forgotPassword">
+        <span routerLink="/forgot-password">Forgot Password?</span>
+      </div> -->
+<!--     <div class="redirectToLogin pading">
+      <span>Don't have an account?<span class="redirect" routerLink="/register-user"> Sign Up</span></span>
+    </div>  -->
+  </div>
+  <button type="button" class="btn btn-warning" [routerLink]="['/']">Click to Return to Home Page</button>
+</div>
