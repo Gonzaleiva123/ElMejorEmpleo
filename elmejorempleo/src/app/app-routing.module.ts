@@ -15,9 +15,9 @@ const routes: Routes = [
   { path: 'DetailEmployment', component: DetailEmploymentComponent, canActivate: [AuthGuard]},
   { path: 'editDetailEmployment/:id', component: DetailEmploymentComponent, canActivate: [AuthGuard]},
   { path: 'login', component: LoginComponent},
-  { path: 'register-user', component: SignUpComponent },
-  { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'verify-email-address', component: VerifyEmailComponent },
+  { path: 'register-user', component: SignUpComponent, canActivate: [AuthGuard] },
+  { path: 'forgot-password', component: ForgotPasswordComponent, canActivate: [AuthGuard] },
+  { path: 'verify-email-address', component: VerifyEmailComponent,  },
 ];
 
 @NgModule({
